@@ -25,7 +25,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Trekking Regions */}
+      
         <div>
           <h3 className=" uppercase text-xl font-bold mb-4">Trekking place</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
@@ -38,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
+  
         <div>
           <h3 className=" font-serif uppercase text-xl font-bold mb-4">Contact Info</h3>
           <div className="text-gray-300 text-sm space-y-3 leading-6 ">
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom */}
+     
       <div className="border-t border-gray-700 mt-10 pt-5 text-center  text-sm">
         <marquee behavior="scroll" direction="right">
           <p>
