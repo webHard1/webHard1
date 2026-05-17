@@ -2,7 +2,7 @@ import React from "react";
 
 export const Greetingpage = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-10 gap-6 px-6">
+    <div className=" mt-20 flex flex-col items-center justify-center mt-10 gap-6 px-6">
         <div className="flex gap-1 under">
             
       <h1 className="text-5xl text-red-500 font-bold">
