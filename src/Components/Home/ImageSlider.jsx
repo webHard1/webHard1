@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const ImageSlider = () => {
   const slides = [
     {
@@ -82,6 +83,7 @@ const ImageSlider = () => {
         ))}
       </div>
     </div>
+
   );
 };
 
