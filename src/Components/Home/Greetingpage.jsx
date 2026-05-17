@@ -21,15 +21,10 @@ export const Greetingpage = () => {
 
 
       <p className="max-w-5xl text-center text-gray-600 text-lg leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente
-        obcaecati dolorum exercitationem voluptas ullam iusto adipisci accusamus
-        totam consectetur aliquid consequuntur rerum ipsa perferendis voluptatum
-        et, illum ex maxime?
+        Nepal Trek welcomes you to an unforgettable adventure through the breathtaking landscapes of Nepal, where every trail leads to stunning mountain views and memorable experiences.
       </p>
       <p className="max-w-7xl text-center text-gray-600 text-lg leading-relaxed">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores similique pariatur 
-        nobis autem aliquam, neque omnis dolorum distinctio repellat, numquam ipsa! Recusandae praesentium
-         accusamus enim? Eligendi voluptatem praesentium ipsam?
+       Explore world-famous trekking destinations like Everest Base Camp and the Annapurna region while discovering Nepal’s rich culture, peaceful mountain trails, and stunning natural scenery. From snow-covered peaks and lush forests to traditional villages and warm local hospitality, every journey is filled with adventure, discovery, and inspiration.
       </p>
 
     </div>
