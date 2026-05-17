@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 
 const ImageSlider = () => {
   const slides = [
@@ -19,10 +18,21 @@ const ImageSlider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Auto Slide Every 2 Seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  // Next Slide
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
+  // Previous Slide
   const prevSlide = () => {
     setCurrentSlide((prev) =>
       prev === 0 ? slides.length - 1 : prev - 1
@@ -31,7 +41,7 @@ const ImageSlider = () => {
 
   return (
     <div className="relative w-full h-[80vh] overflow-hidden mb-10">
-      
+
       {/* Image */}
       <img
         src={slides[currentSlide].image}
@@ -75,7 +85,7 @@ const ImageSlider = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-4 h-4 rounded-full transition ${
+            className={`w-4 h-4 rounded-full transition duration-300 ${
               currentSlide === index
                 ? "bg-white scale-110"
                 : "bg-gray-400"
@@ -83,7 +93,7 @@ const ImageSlider = () => {
           />
         ))}
       </div>
-     
+
     </div>
   );
 };
