@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageSlider from './ImageSlider'
+
 
 const NavBar = () => {
   return (
@@ -33,7 +33,7 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-      <ImageSlider/>
+     
     </nav>
   )
 }

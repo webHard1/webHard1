@@ -30,7 +30,8 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative mt-5  w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[80vh] overflow-hidden mb-10">
+      
       {/* Image */}
       <img
         src={slides[currentSlide].image}
@@ -82,8 +83,8 @@ const ImageSlider = () => {
           />
         ))}
       </div>
+     
     </div>
-
   );
 };
 
