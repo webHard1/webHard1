@@ -136,7 +136,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="w-full bg-amber-900 border-t border-gray-700 h-20 flex items-center justify-center text-gray-300 font-bold text-center px-4">
+      <div className="w-full  border-t border-gray-700 h-20 flex items-center justify-center text-gray-300 font-bold text-center px-4">
         <marquee behavior="scroll" direction="right">
           © {new Date().getFullYear()} Nepal Treks & Expedition.
         </marquee>
