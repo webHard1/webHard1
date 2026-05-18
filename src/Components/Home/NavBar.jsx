@@ -14,7 +14,7 @@ const NavBar = () => {
             </h1>
           </Link>
         </div>
-
+           
         {/* Menu */}
         <ul className="flex gap-10 text-lg font-semibold text-gray-700">
           <Link to="/">
