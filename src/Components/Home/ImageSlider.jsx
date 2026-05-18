@@ -18,7 +18,7 @@ const ImageSlider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Auto Slide Every 2 Seconds
+  // auto slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
