@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,16 +11,20 @@ const NavBar = () => {
       <div className="flex items-center justify-between">
 
         <div className="flex items-center gap-3">
+          <Link to ='/'>
           <h1 className="text-2xl font-bold text-gray-800 font-serif">
             Nepal Trek
           </h1>
+          </Link>
         </div>
 
       
         <ul className="hidden md:flex gap-10 text-lg font-semibold text-gray-700">
+          <Link to ='/' >
           <li className="hover:text-blue-600 cursor-pointer transition duration-300">
             HOME
           </li>
+          </Link>
 
           
           <li
@@ -37,12 +42,17 @@ const NavBar = () => {
             
             {aboutOpen && (
               <ul className="absolute top-full left-0 bg-white shadow-md border border-gray-200 w-48 z-50">
+                <Link to ='/nepalTrek' >
                 <li className="px-4 py-2 hover:bg-gray-100 hover:text-blue-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                   NEPAL TREK
                 </li>
+                </Link>
+                <Link to ='/aboutNepalTrek' >
                 <li className="px-4 py-2 hover:bg-gray-100 hover:text-blue-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                   NEPAL TREK TEAM
                 </li>
+                </Link>
+                <Link></Link>
                 <li className="px-4 py-2 hover:bg-gray-100 hover:text-blue-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                   SERVICES
                 </li>

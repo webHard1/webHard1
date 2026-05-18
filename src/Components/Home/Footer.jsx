@@ -10,6 +10,7 @@ const Footer = () => {
         {/* Logo */}
         <div>
           <h1 className="text-2xl font-bold">NEPAL TREK</h1>
+
           <p className="text-gray-300 leading-7 text-sm mt-2">
             Visit Our Website for Efficient Work.
           </p>
@@ -54,7 +55,7 @@ const Footer = () => {
           </ul>
         </div>
 
-      
+        {/* Trekking Places */}
         <div>
           <h3 className="uppercase text-xl font-bold mb-4">
             Trekking Place
@@ -99,7 +100,7 @@ const Footer = () => {
           </ul>
         </div>
 
-  
+        {/* Contact */}
         <div>
           <h3 className="font-serif uppercase text-xl font-bold mb-4">
             Contact Info
@@ -125,8 +126,17 @@ const Footer = () => {
         </div>
       </div>
 
-     
-      <div className="border-t border-gray-700 mt-10 pt-5 text-center  text-sm">
+      {/* Association Image */}
+      <div className="w-full flex justify-center bg-white py-0">
+        <img
+          src="association.png"
+          alt="Association"
+          className="w-full h-65 object-contain block"
+        />
+      </div>
+
+      {/* Bottom Copyright */}
+      <div className="w-full  border-t border-gray-700 h-20 flex items-center justify-center text-gray-300 font-bold text-center px-4">
         <marquee behavior="scroll" direction="right">
           © {new Date().getFullYear()} Nepal Treks & Expedition.
         </marquee>
