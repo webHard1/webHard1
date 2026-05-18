@@ -2,10 +2,24 @@ import React from 'react'
 
 const TrekkingNepal = () => {
   return (
-   <div className="pt-24">
-      <h1 className="text-4xl">
-        this is Trekking Nepal section
-      </h1>
+    <div className="flex justify-center items-center pt-24">
+      
+      <div className="md:w-1/2 text-center">
+
+        <div className="flex flex-wrap justify-center gap-2">
+          
+          <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
+            TREKKING IN
+          </h1>
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+            NEPAL
+          </h1>
+
+        </div>
+
+      </div>
+
     </div>
   )
 }
