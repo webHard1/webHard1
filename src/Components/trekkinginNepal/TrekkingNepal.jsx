@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Contact = () => {
+const TrekkingNepal = () => {
   return (
    <div className="pt-24">
       <h1 className="text-4xl">
-        this is Contact section
+        this is Trekking Nepal section
       </h1>
     </div>
   )
 }
 
-export default Contact;
+export default TrekkingNepal
