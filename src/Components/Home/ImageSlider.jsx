@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ImageSlider = () => {
   const slides = [
@@ -18,6 +18,14 @@ const ImageSlider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -31,14 +39,12 @@ const ImageSlider = () => {
   return (
     <div className="relative w-full h-[50vh] sm:h-[65vh] md:h-[80vh] overflow-hidden mb-10">
 
-     
       <img
         src={slides[currentSlide].image}
         alt={slides[currentSlide].caption}
         className="w-full h-full object-cover transition-all duration-700"
       />
 
-      
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Caption */}
@@ -52,7 +58,7 @@ const ImageSlider = () => {
         </p>
       </div>
 
-      
+      {/* Previous Button */}
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-3 sm:left-5 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 sm:p-4 rounded-full text-lg sm:text-2xl"
@@ -60,7 +66,7 @@ const ImageSlider = () => {
         &#10094;
       </button>
 
-      
+      {/* Next Button */}
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-3 sm:right-5 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 sm:p-4 rounded-full text-lg sm:text-2xl"
@@ -68,7 +74,7 @@ const ImageSlider = () => {
         &#10095;
       </button>
 
-      
+      {
       <div className="absolute bottom-5 sm:bottom-8 w-full flex justify-center gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
@@ -82,7 +88,6 @@ const ImageSlider = () => {
           />
         ))}
       </div>
-
     </div>
   );
 };
