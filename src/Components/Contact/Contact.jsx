@@ -30,80 +30,91 @@ const Contact = () => {
 
   return (
     <>
-    <div className="pt-28 px-6 md:px-16 pb-16">
+      <div className="pt-28 px-6 md:px-16 pb-16">
 
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-          Contact Us
-        </h1>
+        {/* Heading */}
+        <div className="text-center mb-12">
 
-        <p className="text-gray-600 mt-4 text-lg">
-          Plan your next adventure with Nepal Trek
-        </p>
-      </div>
+          <div className="flex flex-wrap gap-2 justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
+              Contact
+            </h1>
 
-      <div className="grid md:grid-cols-2 gap-10">
-
-        {/* Contact Info */}
-        <div className="bg-gray-100 p-8 rounded-2xl shadow-md">
-
-          <h2 className="text-2xl font-bold mb-6 text-gray-800">
-            Get In Touch
-          </h2>
-
-          <div className="space-y-4 text-gray-700">
-            <p>📍 Kathmandu, Nepal</p>
-            <p>📞 +977 98XXXXXXXX</p>
-            <p>✉️ info@nepaltrek.com</p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+              Us
+            </h1>
           </div>
+
+          <p className="text-gray-600 mt-4 text-lg">
+            Plan your next adventure with Nepal Trek
+          </p>
 
         </div>
 
-        {/* Contact Form */}
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="bg-white p-8 rounded-2xl shadow-md space-y-5"
-        >
+        {/* Main Section */}
+        <div className="grid md:grid-cols-2 gap-10">
 
-          <input
-            type="text"
-            name="user_name"
-            placeholder="Your Name"
-            required
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-          />
+          {/* Contact Info */}
+          <div className="bg-gray-100 p-8 rounded-2xl shadow-md">
 
-          <input
-            type="email"
-            name="user_email"
-            placeholder="Your Email"
-            required
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-          />
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">
+              Get In Touch
+            </h2>
 
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-          ></textarea>
+            <div className="space-y-4 text-gray-700">
+              <p>📍 Pokhara, Nepal</p>
+              <p>📞 +977 9708121885</p>
+              <p>✉️ info@nepaltrek.com</p>
+            </div>
 
-          <button
-            type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition duration-300"
+          </div>
+
+          {/* Contact Form */}
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="bg-white p-8 rounded-2xl shadow-md space-y-5"
           >
-            Send Message
-          </button>
 
-        </form>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your Name"
+              required
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+            />
+
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+            />
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+            ></textarea>
+
+            <button
+              type="submit"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition duration-300"
+            >
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
       </div>
-        
-    </div>
-    <Footer/>
+
+      <Footer />
     </>
-    
   )
 }
 
