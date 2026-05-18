@@ -4,7 +4,7 @@ import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import PhotoGallery from './Components/PhotoGallery/PhotoGallery'
-import { AboutNepaltrek } from './Components/About/Components/AboutNepaltrek'
+import About from './Components/About/About'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/photoGallery' element={<PhotoGallery />} />
-        <Route path='/aboutNepalTrek' element={<AboutNepaltrek />} />
+        <Route path='/aboutNepalTrek' element={<About />} />
       </Routes>
     </>
   )
