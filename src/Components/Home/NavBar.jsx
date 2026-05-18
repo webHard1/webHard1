@@ -16,9 +16,9 @@ const NavBar = () => {
             </h1>
           </Link>
         </div>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-lg font-semibold text-gray-700">
+           
+        {/* Menu */}
+        <ul className="flex gap-10 text-lg font-semibold text-gray-700">
           <Link to="/">
             <li className="hover:text-blue-600 cursor-pointer transition duration-300">
               HOME

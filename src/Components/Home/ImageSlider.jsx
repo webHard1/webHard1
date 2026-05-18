@@ -74,7 +74,7 @@ const ImageSlider = () => {
         &#10095;
       </button>
 
-      {
+      {/* Dots */}
       <div className="absolute bottom-5 sm:bottom-8 w-full flex justify-center gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
