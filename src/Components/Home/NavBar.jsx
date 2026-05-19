@@ -20,10 +20,10 @@ const NavBar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-lg font-semibold text-gray-700">
+        <ul className="hidden md:flex gap-10 font-semibold text-gray-700">
 
           <Link to='/'>
-            <li className="hover:text-red-600 cursor-pointer transition duration-300">
+            <li className="hover:text-red-900 cursor-pointer font-transition duration-300">
               HOME
             </li>
           </Link>
@@ -34,10 +34,10 @@ const NavBar = () => {
             onMouseEnter={() => setAboutOpen(true)}
             onMouseLeave={() => setAboutOpen(false)}
           >
-            <span className="hover:text-red-600 flex items-center gap-1">
+            <span className="hover:text-red-900 flex items-center gap-1">
               ABOUT
               <svg
-                className="w-4 h-4 mt-0.5"
+                className="w-4 h-4 mt-0.5" 
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -55,19 +55,19 @@ const NavBar = () => {
               <ul className="absolute top-full left-0 bg-white shadow-md border border-gray-200 w-48 z-50">
 
                 <Link to='/nepalTrek'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                     NEPAL TREK
                   </li>
                 </Link>
 
                 <Link to='/nepalTrekTeam'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                     NEPAL TREK TEAM
                   </li>
                 </Link>
 
                 <Link to='/services'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-600 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
                     SERVICES
                   </li>
                 </Link>
@@ -77,26 +77,26 @@ const NavBar = () => {
           </li>
 
           <Link to='/trekkingInNepal'>
-            <li className="hover:text-red-600 cursor-pointer transition duration-300">
+            <li className="hover:text-red-900 cursor-pointer transition duration-300">
               TREKKING IN NEPAL
             </li>
           </Link>
 
           <Link to='/photoGallery'>
-            <li className="hover:text-red-600 cursor-pointer transition duration-300">
+            <li className="hover:text-red-900 cursor-pointer transition duration-300">
               PHOTO GALLERY
             </li>
           </Link>
 
           <Link to='/contact'>
-            <li className="hover:text-red-600 cursor-pointer transition duration-300">
+            <li className="hover:text-red-900 cursor-pointer transition duration-300">
               CONTACT
             </li>
           </Link>
 
         </ul>
 
-        {/* Mobile Hamburger */}
+        
         <button
           className="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -109,20 +109,20 @@ const NavBar = () => {
 
       </div>
 
-      {/* Mobile Menu */}
+    
       <ul className={`md:hidden flex flex-col gap-0 text-lg font-semibold text-gray-700 overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 mt-4' : 'max-h-0'}`}>
 
         <Link to='/'>
-          <li className="hover:text-red-600 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
             HOME
           </li>
         </Link>
 
-        {/* Mobile ABOUT Dropdown */}
+      
         <li className="cursor-pointer transition duration-300 py-3 border-b border-gray-200">
 
           <div
-            className="flex items-center justify-between hover:text-red-600"
+            className="flex items-center justify-between hover:text-red-900"
             onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
           >
             <span>ABOUT</span>
@@ -145,19 +145,19 @@ const NavBar = () => {
           <ul className={`overflow-hidden transition-all duration-300 ${mobileAboutOpen ? 'max-h-40 mt-2' : 'max-h-0'}`}>
 
             <Link to='/nepalTrek'>
-              <li className="py-2 pl-4 text-sm hover:text-red-600 border-t border-gray-100">
+              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
                 NEPAL TREK
               </li>
             </Link>
 
             <Link to='/nepalTrekTeam'>
-              <li className="py-2 pl-4 text-sm hover:text-red-600 border-t border-gray-100">
+              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
                 NEPAL TREK TEAM
               </li>
             </Link>
 
             <Link to='/services'>
-              <li className="py-2 pl-4 text-sm hover:text-red-600 border-t border-gray-100">
+              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
                 SERVICES
               </li>
             </Link>
@@ -166,19 +166,19 @@ const NavBar = () => {
         </li>
 
         <Link to='/trekkingInNepal'>
-          <li className="hover:text-red-600 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
             TREKKING IN NEPAL
           </li>
         </Link>
 
         <Link to='/photoGallery'>
-          <li className="hover:text-red-600 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
             PHOTO GALLERY
           </li>
         </Link>
 
         <Link to='/contact'>
-          <li className="hover:text-red-600 cursor-pointer transition duration-300 py-3">
+          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3">
             CONTACT
           </li>
         </Link>
