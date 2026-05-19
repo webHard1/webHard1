@@ -10,11 +10,11 @@ const NepalTrek = () => {
         <div className="md:w-1/2 text-center">
 
           <div className="flex flex-wrap gap-2 mt-10 justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-900 font-light">
               About
             </h1>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+            <h1 className="sm:text-4xl md:text-5xl font-serif font-light text-gray-800">
               Us
             </h1>
           </div>
@@ -22,7 +22,7 @@ const NepalTrek = () => {
           <p className="text-left ml-9 text-base sm:text-lg leading-relaxed mt-4">
             Nepal Trek welcomes you to an unforgettable adventure through the breathtaking  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, debitis amet assumenda eos praesentium necessitatibus accusamus tenetur voluptatem officiis deleniti dolorum aliquid ea aliquam vero quaerat eligendi nemo blanditiis velit.landscapes of Nepal, where every trail leads to stunning mountain views and memorable experiences.
           </p>
-    
+
           <p className="text-left text-base ml-9 sm:text-lg leading-relaxed mt-4">
             Explore wor Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, saepe. Earum odio eveniet sequi adipisci, officiis commodi expedita ratione, totam quidem distinctio delectus ipsam? Cumque voluptate dicta perspiciatis harum totam.ld-famous trekking destinations like Everest Base Camp and the Annapurna region while discovering Nepal's rich culture, peaceful mountain trails, and stunning natural scenery.
           </p>

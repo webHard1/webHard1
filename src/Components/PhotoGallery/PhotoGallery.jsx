@@ -3,90 +3,150 @@ import Footer from "../Home/Footer";
 
 const PhotoGallery = () => {
   const photos = [
-    { id: 1, name: "Everest View", image: "eve.jfif", desc: "Beautiful view of Mount Everest." },
-    { id: 2, name: "Annapurna Trek", image: "imagw1.jpg", desc: "Adventure in Annapurna region." },
-    { id: 3, name: "Pokhara Lake", image: "images.jfif", desc: "Peaceful Fewa Lake in Pokhara." },
-    { id: 4, name: "Himalaya Sunrise", image: "images (1).jfif", desc: "Sunrise over the Himalayas." },
-    { id: 5, name: "Village Life", image: "vil.jfif", desc: "Traditional Nepali village lifestyle." },
-    { id: 6, name: "Mountain Trail", image: "download.jfif", desc: "Trekking trail in high mountains." },
-  ];
+    {
+      id: 1,
+      name: "Everest View",
+      image:
+        "https://images.unsplash.com/photo-1720939485733-43c874b6044d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bXQlMjBldmVyZXN0fGVufDB8fDB8fHww",
+      desc: "Beautiful view of Mount Everest.",
+    },
 
+    {
+      id: 2,
+      name: "Annapurna Trek",
+      image:
+        "https://www.muchbetteradventures.com/magazine/content/images/2025/10/Annapurna-Circuit-6-1600x1067--1-.jpeg",
+      desc: "Adventure in Annapurna region.",
+    },
+
+    {
+      id: 3,
+      name: "Phewa Lake",
+      image:
+        "https://images.pexels.com/photos/14989388/pexels-photo-14989388.jpeg?cs=srgb&dl=pexels-nishess-shakya-401526881-14989388.jpg&fm=jpg",
+      desc: "Peaceful Fewa Lake in Pokhara.",
+    },
+
+    {
+      id: 4,
+      name: "Himalaya Sunrise",
+      image:
+        "https://boldhimalaya.com/wp-content/uploads/2025/12/sunrise-and-sunset.webp",
+      desc: "Sunrise over the Himalayas.",
+    },
+
+    {
+      id: 5,
+      name: "Village Life",
+      image:
+        "https://www.redcross.org/content/dam/redcross/atg/707x482/SlideShow-NapaEarthquake/Bountiful-2.jpg.transform/768/q70/feature/image.jpeg",
+      desc: "Traditional Nepali village lifestyle.",
+    },
+
+    {
+      id: 6,
+      name: "Mountain Trail",
+      image:
+        "https://imgproxy.natucate.com/7g0oBg7AOOpA57Y5e3SPzmbz_pOcDjBeVOEECR-Rhl8/rs:fill/g:ce/w:3264/h:1836/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlbi85ZjE4YTYzYS03ODRhLTQwMmUtOGYxYy01MzA4MTUyMGM3Y2QvODhlYTQ4N2M2Yy0xNjc5NDg2MzQ3L25hdHVycmVpc2UtbmVwYWwtZ3JlYXQtaGltYWxheWEtdHJhaWwtc2VjdGlvbi00Yi10cmVra2luZy1ncnVwcGUtbmF0dWNhdGUuanBn",
+      desc: "Trekking trail in high mountains.",
+    },
+  ];
+  {/*usestate hook*/}
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   return (
     <div className="min-h-screen flex flex-col">
 
-      {/* Main Content */}
+      
       <div className="pt-24 px-6 flex-1">
 
-        {/* Title */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
-            PHOTO
-          </h1>
+  
+          <div className="flex flex-wrap gap-2 justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-900 font-light">
+            Photo
+            </h1>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
-            GALLERY
-          </h1>
-        </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+            Gallery
+            </h1>
+          </div>
 
-        {/* Gallery Grid */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* Gallery */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
+
           {photos.map((photo) => (
             <div
               key={photo.id}
               onClick={() => setSelectedPhoto(photo)}
-              className="cursor-pointer overflow-hidden rounded-xl shadow-lg hover:scale-105 transition duration-300"
+              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer hover:shadow-xl duration-300"
             >
+
               <img
                 src={photo.image}
                 alt={photo.name}
                 className="w-full h-60 object-cover"
               />
-              <div className="p-3 bg-white">
-                <h2 className="text-lg font-semibold">{photo.name}</h2>
+
+              <div className="p-4">
+
+                <h2 className="text-lg font-semibold text-gray-800">
+                  {photo.name}
+                </h2>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {photo.desc}
+                </p>
+
               </div>
             </div>
           ))}
         </div>
 
-        {/* Modal Popup */}
+       {/*conditional rendering */}
+
         {selectedPhoto && (
           <div
-            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
             onClick={() => setSelectedPhoto(null)}
           >
+
             <div
-              className="bg-white rounded-xl max-w-md w-full p-5 relative"
+              className="bg-white rounded-lg max-w-2xl w-full overflow-hidden relative"
               onClick={(e) => e.stopPropagation()}
             >
+
               <img
                 src={selectedPhoto.image}
                 alt={selectedPhoto.name}
-                className="w-full h-64 object-cover rounded-lg"
+                className="w-full h-80 object-cover"
               />
 
-              <h2 className="text-2xl font-bold mt-4">
-                {selectedPhoto.name}
-              </h2>
+              <div className="p-5">
 
-              <p className="text-gray-600 mt-2">
-                {selectedPhoto.desc}
-              </p>
+                <h2 className="text-2xl font-bold text-gray-800">
+                  {selectedPhoto.name}
+                </h2>
 
-              {/* Close Button */}
+                <p className="text-gray-600 mt-2">
+                  {selectedPhoto.desc}
+                </p>
+
+              </div>
+
+          
               <button
                 onClick={() => setSelectedPhoto(null)}
-                className="absolute top-2 right-3 text-xl font-bold text-gray-700 hover:text-red-500"
+                className="absolute top-3 right-4 text-2xl font-bold text-white"
               >
                 ✕
               </button>
+
             </div>
           </div>
         )}
       </div>
 
-      {/* Footer (FULL WIDTH FIXED) */}
+ 
       <Footer />
 
     </div>

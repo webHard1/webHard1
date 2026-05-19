@@ -36,7 +36,7 @@ const Contact = () => {
         <div className="text-center mb-12">
 
           <div className="flex flex-wrap gap-2 justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-900 font-light">
               Contact
             </h1>
 

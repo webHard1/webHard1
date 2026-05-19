@@ -23,6 +23,8 @@ function App() {
         <Route path='/trekkingInNepal' element={<TrekkingNepal />} />
         <Route path='/services' element={<Services />} />
         <Route path='/photoGallery' element={<PhotoGallery />} />
+        <Route path='/nepalTrekTeam' element={<NepalTrekTeam />} />
+
         
       </Routes>
     </>
