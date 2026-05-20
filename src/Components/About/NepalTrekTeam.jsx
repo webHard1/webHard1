@@ -71,7 +71,7 @@ const NepalTrekTeam = () => {
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-full h-80 object-cover hover:scale-105 duration-120 shadow-2xl "
+                className="w-full h-80 object-cover rounded-2xl hover:scale-105 duration-120 shadow-2xl "
               />
 
               <h2 className="mt-3 text-gray-800 font-semibold">
