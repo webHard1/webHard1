@@ -54,7 +54,7 @@ const NepalTrekTeam = () => {
 
   return (
     <>
-      <div className="pt-24 px-6 mt-5">
+      <div className="pt-24 px-6 ">
         <div className="flex justify-center items-center gap-3 mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-4xl text-red-900">
             OUR
