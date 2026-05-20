@@ -1,54 +1,72 @@
-import React from 'react'
-import Footer from '../Home/Footer'
+import React from "react";
+import Footer from "../Home/Footer";
+
 const NepalTrek = () => {
   return (
     <>
-    <div className="pt-24 mt-10 px-6">
+      <div className="min-h-screen flex flex-col justify-between pt-24 pb-12 lg:pt-0 lg:pb-0 pl-4 sm:pl-6 lg:pl-10 overflow-hidden w-full">
 
-      <div className="flex flex-col md:flex-row gap-10 items-stretch">
+        {/* Main layout wrapper */}
+        <div className="max-w-[100vw] lg:mr-0 flex flex-col lg:flex-row items-center gap-10 lg:gap-16 w-full my-auto">
 
-        <div className="md:w-1/2 text-center">
+          {/* Left Content - Retains top/bottom padding to stay perfectly aligned */}
+          <div className="w-full lg:w-1/2 lg:max-w-[640px] lg:ml-auto pt-12 lg:pt-24 lg:pb-24 pr-4 sm:pr-6 lg:pr-0">
 
-          <div className="flex flex-wrap gap-2 mt-10 justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-900 font-light">
-              About
-            </h1>
+            {/* Heading */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-red-900">
+                About
+              </h1>
 
-            <h1 className="sm:text-4xl md:text-5xl font-serif font-light text-gray-800">
-              Us
-            </h1>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-light text-gray-800">
+                Us
+              </h1>
+            </div>
+
+            {/* Paragraphs */}
+            <p className="text-gray-700 text-base sm:text-lg leading-8 text-center lg:text-left">
+              Nepal Trek is dedicated to creating unforgettable trekking and
+              travel experiences across the beautiful landscapes of Nepal. From
+              the towering Himalayan mountains to peaceful villages and ancient
+              cultural sites, we help travelers discover the true beauty and
+              adventure that Nepal has to offer.
+            </p>
+
+            <p className="text-gray-700 text-base sm:text-lg leading-8 mt-6 text-center lg:text-left">
+              Our experienced team organizes guided treks to popular destinations
+              such as Everest Base Camp, Annapurna Base Camp, and Langtang
+              Valley. We focus on safety, comfort, and authentic local
+              experiences so every traveler can enjoy Nepal’s breathtaking
+              nature, warm hospitality, and rich traditions with confidence.
+            </p>
           </div>
 
-          <p className="text-left ml-9 text-base sm:text-lg leading-relaxed mt-4">
-            Nepal Trek welcomes you to an unforgettable adventure through the breathtaking  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, debitis amet assumenda eos praesentium necessitatibus accusamus tenetur voluptatem officiis deleniti dolorum aliquid ea aliquam vero quaerat eligendi nemo blanditiis velit.landscapes of Nepal, where every trail leads to stunning mountain views and memorable experiences.
-          </p>
-
-          <p className="text-left text-base ml-9 sm:text-lg leading-relaxed mt-4">
-            Explore wor Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, saepe. Earum odio eveniet sequi adipisci, officiis commodi expedita ratione, totam quidem distinctio delectus ipsam? Cumque voluptate dicta perspiciatis harum totam.ld-famous trekking destinations like Everest Base Camp and the Annapurna region while discovering Nepal's rich culture, peaceful mountain trails, and stunning natural scenery.
-          </p>
+          {/* 
+            Right Image Container 
+            1. Removed all rounding on desktop (lg:rounded-none) so it reaches the edge corners.
+            2. Kept your base heights, but on desktop it spans your full layout height (lg:h-[700px]).
+          */}
+          <div className="w-full lg:w-1/2 h-[300px] sm:h-[450px] lg:h-[700px] overflow-hidden rounded-3xl lg:rounded-none shadow-2xl lg:[clip-path:polygon(12%_0%,100%_0%,100%_100%,0%_100%)]">
+            <picture>
+              <source
+                media="(min-width: 640px)"
+                srcSet="https://images.wallpaperscraft.com/image/single/mountain_peak_tourists_148482_3840x2160.jpg"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=600"
+                alt="Nepal Trek"
+                
+                className="w-full h-full object-cover"
+              />
+            </picture>
+          </div>
 
         </div>
-
-        <div
-          className="md:w-1/2 overflow-hidden self-stretch -mr-6 -mt-33 min-h-screen"
-          style={{
-            clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)"
-          }}
-        >
-          <img
-            src="https://images.wallpaperscraft.com/image/single/mountain_peak_tourists_148482_3840x2160.jpg"
-            className="w-full h-full object-cover object-right-top"
-            alt="Nepal Trek"
-          />
-        </div>
-
       </div>
-         
-    </div>
-    <Footer/>
-    </>
-    
-  )
-}
 
-export default NepalTrek
+      <Footer />
+    </>
+  );
+};
+
+export default NepalTrek;
