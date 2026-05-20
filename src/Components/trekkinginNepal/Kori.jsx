@@ -10,31 +10,23 @@ const Kori = () => {
     
         const treks = [
             {
-                title: "Annapurna Trek",
+                title: "Kapuche Lake Trek",
                 image:
-                    "https://res.cloudinary.com/activeadventures/image/upload/gpkml5je6d88h2z3ayvx.jpg",
+                    "https://myeveresttrip.com/wp-content/uploads/2024/11/Kapuche-Glacier-Lake.webp",
     
                 description:
-                    "Experience beautiful Himalayan landscapes, peaceful villages, forests, and breathtaking mountain views in the Annapurna region.",
+                    "The Kapuche Lake Trek is famous because it takes you to the lowest glacial lake in Nepal, making it very unique. The journey starts from Sikles village, a beautiful Gurung settlement, and continues through green forests, waterfalls, and remote mountain trails. The lake itself is surrounded by rocky cliffs and snowy peaks, giving a stunning glacier-fed landscape experience in a quiet environment.",
             },
     
             {
-                title: "Everest Trek",
+                title: "Kori Trek",
                 image:
-                    "https://www.acethehimalaya.com/wp-content/uploads/2026/01/joyous-at-everest-base-camp-600x450.jpg.webp",
+                    "https://mountfacenepal.com/uploads/package/gallery/kori-danda.webp",
     
                 description:
-                    "Explore the legendary Everest trails surrounded by snow-capped mountains and rich Sherpa culture.",
+                    "The Kori Trek is a hidden gem near Pokhara that takes you high above Sikles village. The trail climbs through dense rhododendron forests, open grasslands, and yak grazing areas. At Kori Danda, you get a breathtaking 360-degree view of the Annapurna range and surrounding peaks. It is a quiet trek, perfect for those who want mountain views and nature without crowds.",
             },
     
-            {
-                title: "Langtang Trek",
-                image:
-                    "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
-    
-                description:
-                    "Discover peaceful valleys, forests, rivers, and incredible Himalayan scenery near Kathmandu.",
-            },
         ];
     
         const openModal = (trek) => {

@@ -10,31 +10,23 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         
             const treks = [
                 {
-                    title: "Annapurna Trek",
+                    title: "Upper Mustang Trek",
                     image:
-                        "https://res.cloudinary.com/activeadventures/image/upload/gpkml5je6d88h2z3ayvx.jpg",
+                        "https://thenepaltrekkingcompany.com/wp-content/uploads/2023/06/upper-mustang-1024x416.jpg",
         
                     description:
-                        "Experience beautiful Himalayan landscapes, peaceful villages, forests, and breathtaking mountain views in the Annapurna region.",
+                        " The Upper Mustang Trek is one of the most unique treks in Nepal because it feels completely different from the green Himalayas. The landscape is dry, dusty, and desert-like, with dramatic red cliffs and deep valleys. The trail leads to the ancient walled city of Lo Manthang, where you can explore old monasteries, palaces, and Tibetan-influenced culture that has been preserved for centuries. It feels like stepping into a hidden world.",
                 },
         
                 {
-                    title: "Everest Trek",
+                    title: "Lo Manthang Cultural Trek",
                     image:
-                        "https://www.acethehimalaya.com/wp-content/uploads/2026/01/joyous-at-everest-base-camp-600x450.jpg.webp",
+                        "https://media.sublimetrails.com/uploads/img/lo-manthang-(2).webp",
         
                     description:
-                        "Explore the legendary Everest trails surrounded by snow-capped mountains and rich Sherpa culture.",
+                        "The Lo Manthang Cultural Trek focuses mainly on exploring the ancient walled city of Lo Manthang, the heart of Upper Mustang. The city is full of historic monasteries, traditional houses, and prayer walls that reflect strong Tibetan heritage. The surrounding landscape is dry and dramatic, but the cultural experience inside the city makes it one of the most special trekking destinations in Nepal.",
                 },
         
-                {
-                    title: "Langtang Trek",
-                    image:
-                        "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
-        
-                    description:
-                        "Discover peaceful valleys, forests, rivers, and incredible Himalayan scenery near Kathmandu.",
-                },
             ];
         
             const openModal = (trek) => {

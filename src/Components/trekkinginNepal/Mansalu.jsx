@@ -10,30 +10,46 @@ const Mansalu = () => {
         
             const treks = [
                 {
-                    title: "Annapurna Trek",
+                    title: "Manaslu Circuit Trek",
                     image:
-                        "https://res.cloudinary.com/activeadventures/image/upload/gpkml5je6d88h2z3ayvx.jpg",
+                        "https://museumofwander.com/wp-content/uploads/2025/09/Manaslu-circuit-trek-mountains.jpg",
         
                     description:
-                        "Experience beautiful Himalayan landscapes, peaceful villages, forests, and breathtaking mountain views in the Annapurna region.",
+                        "The Manaslu Circuit Trek is a remote and less-crowded alternative to Annapurna Circuit. The trail follows the Budhi Gandaki River, passing through deep gorges, suspension bridges, and traditional mountain villages. As you go higher, the culture becomes more Tibetan-like, and the scenery changes into dramatic alpine landscapes. The highlight is crossing Larke La Pass, which offers stunning views of Manaslu and surrounding peaks.",
                 },
         
                 {
-                    title: "Everest Trek",
+                    title: "Tsum Valley Trek",
                     image:
-                        "https://www.acethehimalaya.com/wp-content/uploads/2026/01/joyous-at-everest-base-camp-600x450.jpg.webp",
+                        "https://www.himalayajourneys.com/assets/images/Manaslu%20tsum%20valley%20trekking.jpg",
         
                     description:
-                        "Explore the legendary Everest trails surrounded by snow-capped mountains and rich Sherpa culture.",
+                        "The Tsum Valley Trek is a sacred and isolated valley trek in the Manaslu region. The area is rich in ancient monasteries, prayer flags, and Buddhist traditions that have been preserved for centuries. The valley feels peaceful and untouched, making it ideal for trekkers looking for culture, spirituality, and quiet natural beauty rather than crowds.",
                 },
         
                 {
-                    title: "Langtang Trek",
+                    title: "Manaslu Base Camp Trek",
                     image:
-                        "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
+                        "https://media.nepaltrekadventures.com/uploads/img/manaslu-base-camp.webp",
         
                     description:
-                        "Discover peaceful valleys, forests, rivers, and incredible Himalayan scenery near Kathmandu.",
+                        "The Manaslu Base Camp Trek takes you closer to the towering Mount Manaslu. The journey passes through beautiful forests, remote villages, and high alpine areas before reaching base camp. From there, you get incredible views of glaciers and surrounding peaks. It is a quieter trek, perfect for those who want adventure without heavy tourist crowds.",
+                },
+                 {
+                    title: "Rupina La Pass Trek",
+                    image:
+                        "https://www.himalayajourneys.com/assets/images/manaslu/manaslu-rupinala-pass-trek.jpg",
+        
+                    description:
+                        " remote and rarely crowded, passing through dense forests, waterfalls, and high ridges. The climb to Rupina La Pass is tough but rewarding, offering dramatic views of snow peaks and untouched landscapes. It is ideal for trekkers looking for pure wilderness and solitude.",
+                },
+                 {
+                    title: "Ganesh Himal Base Camp Trek",
+                    image:
+                        "https://sherpaheritagetrails.com/wp-content/uploads/2025/09/Tsum-Valley-and-Ganesh-himal-base-camp-region.jpg",
+        
+                    description:
+                        "The Ganesh Himal Base Camp Trek is a quiet and scenic trek located between the Manaslu and Langtang regions. It is not as popular as other major treks, which makes it peaceful and less crowded. The trail offers a mix of cultural villages, forests, and high mountain views. From base camp, you can see the stunning Ganesh Himal range along with surrounding peaks, making it a perfect off-the-beaten-path adventure.",
                 },
             ];
         

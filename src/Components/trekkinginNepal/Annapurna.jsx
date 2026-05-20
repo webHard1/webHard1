@@ -9,30 +9,30 @@ const Trekking = () => {
 
     const treks = [
         {
-            title: "Annapurna Trek",
+            title: "Annapurna Circuit Trek",
             image:
-                "https://res.cloudinary.com/activeadventures/image/upload/gpkml5je6d88h2z3ayvx.jpg",
+                "https://www.acethehimalaya.com/wp-content/uploads/2024/04/capturing-moments-during-annapurna-circuit-trek-spring-1024x768.jpg.webp",
 
             description:
-                "Experience beautiful Himalayan landscapes, peaceful villages, forests, and breathtaking mountain views in the Annapurna region.",
+                "Annapurna Circuit Trek Annapurna Circuit Trek is one of the most famous long trekking routes in Nepal. It takes you around the entire Annapurna massif, passing through green valleys, rivers, forests, and high mountain landscapes. The trek becomes more dramatic as you reach higher altitudes, especially when crossing Thorong La Pass at 5,416 meters. Along the way, you experience different cultures like Gurung, Thakali, and Tibetan-influenced villages, making it both a natural and cultural journey.",
         },
 
         {
-            title: "Everest Trek",
+            title: "Annapurna Base Camp (ABC) Trek",
             image:
-                "https://www.acethehimalaya.com/wp-content/uploads/2026/01/joyous-at-everest-base-camp-600x450.jpg.webp",
+                "https://adventurealtitudetreks.com/uploads/img/abc-trekking.webp",
 
             description:
-                "Explore the legendary Everest trails surrounded by snow-capped mountains and rich Sherpa culture.",
+                "Annapurna Base Camp Trek is a shorter but very scenic trek that leads directly to the base of Annapurna I. The trail goes through beautiful villages, terraced fields, waterfalls, and rhododendron forests before reaching the base camp at 4,130 meters. From ABC, you are surrounded by tall peaks like Annapurna I, Machhapuchhre, and Hiunchuli, creating a stunning mountain amphitheater view that feels very close and powerful.",
         },
 
         {
-            title: "Langtang Trek",
+            title: "Ghorepani Poon Hill Trek",
             image:
-                "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
+                "https://himalayatrip.com/wp-content/uploads/2025/01/Accommodation-During-Ghorepani-Poon-Hill-Trek.webp",
 
             description:
-                "Discover peaceful valleys, forests, rivers, and incredible Himalayan scenery near Kathmandu.",
+                "Ghorepani Poon Hill Trek is a short and easy trek, perfect for beginners. The main highlight is the sunrise view from Poon Hill at 3,210 meters, where you can see mountains like Dhaulagiri, Annapurna, and Machhapuchhre glowing in golden light. The trail passes through peaceful villages and colorful rhododendron forests, especially beautiful in spring, making it a relaxing and rewarding trekking experience.",
         },
     ];
 

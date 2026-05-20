@@ -9,30 +9,37 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
     const treks = [
         {
-            title: "Annapurna Trek",
+            title: "Everest Base Camp Trek",
             image:
-                "https://res.cloudinary.com/activeadventures/image/upload/gpkml5je6d88h2z3ayvx.jpg",
+                "https://excitingnepal.com/wp-content/uploads/2021/12/12-Days-Everest-base-Camp-trek.jpeg",
 
             description:
-                "Experience beautiful Himalayan landscapes, peaceful villages, forests, and breathtaking mountain views in the Annapurna region.",
+                "The Everest Base Camp Trek is the most famous trek in Nepal. It takes you deep into the Khumbu region, where you experience Sherpa culture, suspension bridges, and breathtaking Himalayan scenery. The journey slowly climbs through Namche Bazaar and Tengboche before reaching Everest Base Camp, offering a once-in-a-lifetime view of the world’s highest peak.",
         },
 
         {
-            title: "Everest Trek",
+            title: "Gokyo Lakes Trek",
             image:
-                "https://www.acethehimalaya.com/wp-content/uploads/2026/01/joyous-at-everest-base-camp-600x450.jpg.webp",
+                "https://worldexpeditions.com/croppedImages/Indian-Sub-Continent/Nepal/Gokyo-_25_-6916844-800px.jpg",
 
             description:
-                "Explore the legendary Everest trails surrounded by snow-capped mountains and rich Sherpa culture.",
+                "The Gokyo Lakes Trek is known for its peaceful trails and beautiful blue lakes surrounded by mountains. The highlight is the climb to Gokyo Ri, which offers one of the best panoramic views in the Everest region, including Everest itself. It is a quieter alternative to the main EBC trail.",
         },
 
         {
-            title: "Langtang Trek",
+            title: "Everest Three Passes Trek",
             image:
-                "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
+                "https://media.allnepalhiking.com/uploads/media/Everest-Three-High-Passes-Trek.jpg",
+            description:
+                "The Everest Three Passes Trek is the most difficult trekking route in the Everest region. It crosses three high mountain passes, offering extreme adventure and unmatched scenery. You experience glaciers, remote valleys, and iconic Everest viewpoints, making it ideal for trekkers who want a full Himalayan challenge.",
+        },
+          {
+            title: "Everest View Trek",
+            image:
+                "https://cms.discoveryworldtrekking.com/media/6445/everest-view-trek-banner.webp?w=2880&h=1040",
 
             description:
-                "Discover peaceful valleys, forests, rivers, and incredible Himalayan scenery near Kathmandu.",
+                "The Everest View Trek is a short and easier option for those who want to see Everest without going too high or trekking for many days. It offers beautiful views of the Himalayas, visits to Sherpa villages, and cultural monasteries like Tengboche, making it a great introduction to the Everest region.",
         },
     ];
 
