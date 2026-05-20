@@ -3,13 +3,13 @@ import React from "react";
 export const Greetingpage = () => {
   return (
     <div className="mt-20 flex flex-col items-center justify-center mt-10 gap-6 px-4 sm:px-6">
-        <div className="flex flex-wrap justify-center gap-1 under">
+        <div className="flex flex-wrap justify-center gap-2 under">
             
-      <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
+      <h1 className="text-lg sm:text-4xl md:text-5xl text-red-900">
         NAMASTE!
       </h1>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+      <h1 className="text-lg sm:text-4xl md:text-5xl font-serif text-gray-800">
         GREETING!!
       </h1>
         </div>

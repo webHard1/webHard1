@@ -6,17 +6,15 @@ const TrekkingNepal = () => {
       
       <div className="md:w-1/2 text-center">
 
-        <div className="flex flex-wrap justify-center gap-2">
-          
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-500 font-bold">
-            TREKKING IN
-          </h1>
+       <div className="flex flex-wrap gap-2 justify-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl text-red-900 font-light">
+            TREKKING IN 
+            </h1>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-800">
             NEPAL
-          </h1>
-
-        </div>
+            </h1>
+          </div>
 
       </div>
 
