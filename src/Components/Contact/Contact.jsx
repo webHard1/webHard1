@@ -9,7 +9,8 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm(
+      .sendForm( 
+        
         'service_lrlg6o2',
         'template_oi2lzqr',
         form.current,
