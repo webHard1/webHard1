@@ -50,6 +50,39 @@ const PhotoGallery = () => {
         "https://imgproxy.natucate.com/7g0oBg7AOOpA57Y5e3SPzmbz_pOcDjBeVOEECR-Rhl8/rs:fill/g:ce/w:3264/h:1836/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlbi85ZjE4YTYzYS03ODRhLTQwMmUtOGYxYy01MzA4MTUyMGM3Y2QvODhlYTQ4N2M2Yy0xNjc5NDg2MzQ3L25hdHVycmVpc2UtbmVwYWwtZ3JlYXQtaGltYWxheWEtdHJhaWwtc2VjdGlvbi00Yi10cmVra2luZy1ncnVwcGUtbmF0dWNhdGUuanBn",
       desc: "Trekking trail in high mountains.",
     },
+       {
+      id: 7,
+      name: "Annapurna",
+      image:
+        "https://www.acethehimalaya.com/wp-content/uploads/2024/04/capturing-moments-during-annapurna-circuit-trek-spring-1024x768.jpg.webp",
+      desc: "A classic Himalayan trek around the Annapurna massif with diverse landscapes, high passes, and rich cultural villages",
+    },
+       {
+      id: 8,
+      name: "Upper Mustang Trek",
+      image:
+        "https://media.sublimetrails.com/uploads/img/lo-manthang-(2).webp",
+      desc: "A mystical desert-like Himalayan trek in the ancient Kingdom of Mustang with Tibetan culture, caves, and dramatic landscapes.",
+    },
+       {
+      id: 9,
+      name: "Kori",
+      image:
+        "https://mountfacenepal.com/uploads/package/gallery/kori-danda.webp",
+      desc: "Trekking trail in high mountains.",
+    },
+    {
+  id: 10,
+  name: "Langtang Valley Trek",
+  location: "Rasuwa District, Nepal",
+  image:
+    "https://www.magicalsummits.com/wp-content/uploads/2023/02/Langtang-Valley-Trek-1.jpg",
+
+  desc:
+    "A beautiful Himalayan trek close to Kathmandu featuring glaciers, alpine forests, and rich Tamang culture.",
+}
+
+
   ];
   {/*usestate hook*/}
   const [selectedPhoto, setSelectedPhoto] = useState(null);
