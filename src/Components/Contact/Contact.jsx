@@ -4,13 +4,22 @@ import Footer from '../Home/Footer'
 
 const Contact = () => {
   const form = useRef()
-
   const sendEmail = (e) => {
     e.preventDefault()
 
+    const email = form.current.user_email.value
+
+    // Email validation regex
+    const emailPattern =
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address')
+      return
+    }
+
     emailjs
-      .sendForm( 
-        
+      .sendForm(
         'service_lrlg6o2',
         'template_oi2lzqr',
         form.current,
@@ -19,15 +28,15 @@ const Contact = () => {
       .then(
         () => {
           alert('Message Sent Successfully!')
+          e.target.reset()
         },
         (error) => {
           alert('Failed to send message')
           console.log(error.text)
         }
       )
-
-    e.target.reset()
   }
+
 
   return (
     <>
@@ -90,6 +99,7 @@ const Contact = () => {
               name="user_email"
               placeholder="Your Email"
               required
+              autoComplete="off"
               className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
             />
 

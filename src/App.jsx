@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import NavBar from './Components/Home/NavBar'
 import Home from './Components/Home/Home'
 import Contact from './Components/Contact/Contact'
@@ -13,13 +13,17 @@ import Langtang from './Components/trekkinginNepal/Langtang'
 import Mansalu from './Components/trekkinginNepal/Mansalu'
 import UpperMustang from './Components/trekkinginNepal/UpperMustang'
 import Kori from './Components/trekkinginNepal/Kori'
+import ScrollToTop from './Components/Home/Scroller_top/ScrollToTop.jsx'
 
 
 
 function App() {
   return (
     <>
+      
+         
       <NavBar />
+      <ScrollToTop/>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -38,6 +42,7 @@ function App() {
 
         
       </Routes>
+      
     </>
   )
 }
