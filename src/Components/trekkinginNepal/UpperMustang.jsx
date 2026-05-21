@@ -1,120 +1,172 @@
-    import React from 'react'
+import React, { useState } from 'react'
 import Modal from './Modal';
-import { useState } from 'react';
 import Footer from '../Home/Footer';
 
 const UpperMustang = () => {
 
-const [isModalOpen, setIsModalOpen] = useState(false);
-            const [selectedTrek, setSelectedTrek] = useState(null);
-        
-            const treks = [
-                {
-                    title: "Upper Mustang Trek",
-                    image:
-                        "https://thenepaltrekkingcompany.com/wp-content/uploads/2023/06/upper-mustang-1024x416.jpg",
-        
-                    description:
-                        " The Upper Mustang Trek is one of the most unique treks in Nepal because it feels completely different from the green Himalayas. The landscape is dry, dusty, and desert-like, with dramatic red cliffs and deep valleys. The trail leads to the ancient walled city of Lo Manthang, where you can explore old monasteries, palaces, and Tibetan-influenced culture that has been preserved for centuries. It feels like stepping into a hidden world.",
-                },
-        
-                {
-                    title: "Lo Manthang Cultural Trek",
-                    image:
-                        "https://media.sublimetrails.com/uploads/img/lo-manthang-(2).webp",
-        
-                    description:
-                        "The Lo Manthang Cultural Trek focuses mainly on exploring the ancient walled city of Lo Manthang, the heart of Upper Mustang. The city is full of historic monasteries, traditional houses, and prayer walls that reflect strong Tibetan heritage. The surrounding landscape is dry and dramatic, but the cultural experience inside the city makes it one of the most special trekking destinations in Nepal.",
-                },
-        
-            ];
-        
-            const openModal = (trek) => {
-                setSelectedTrek(trek);
-                setIsModalOpen(true);
-            };
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedTrek, setSelectedTrek] = useState(null);
 
+    const treks = [
+        {
+            title: "Upper Mustang Trek",
+            image:
+                "https://thenepaltrekkingcompany.com/wp-content/uploads/2023/06/upper-mustang-1024x416.jpg",
 
-  return (
-     <>
-        <div className="min-h-screen bg-gray-50 py-20 px-6">
+            description:
+                "A unique desert-like Himalayan trek leading to Lo Manthang with ancient monasteries, caves, and Tibetan culture.",
 
-            {/* Heading */}
-            <div className="text-center">
+            price: "RS 85,000",
+            duration: "10-14 Days",
+            risk: "Moderate",
+            accommodation: "Tea Houses & Lodges",
+            transportation: "Flight / Jeep",
+            review: "4.9/5",
+            experience: "A rare cultural journey in a hidden Himalayan kingdom.",
+        },
 
-                <div className="flex flex-wrap gap-3 justify-center items-center">
+        {
+            title: "Lo Manthang Cultural Trek",
+            image:
+                "https://media.sublimetrails.com/uploads/img/lo-manthang-(2).webp",
 
-                    <h1 className="text-4xl md:text-5xl text-red-900 font-light tracking-wide">
-                        Upper Mustang
-                    </h1>
+            description:
+                "A cultural exploration of the ancient walled city of Lo Manthang with strong Tibetan heritage and traditions.",
 
-                    <h1 className="text-4xl md:text-5xl font-serif text-gray-800">
-                        Treks
-                    </h1>
+            price: "RS 90,000",
+            duration: "12-16 Days",
+            risk: "Moderate",
+            accommodation: "Tea Houses",
+            transportation: "Flight / Jeep",
+            review: "4.8/5",
+            experience: "Best for cultural and historical exploration.",
+        },
+    ];
+
+    const openModal = (trek) => {
+        setSelectedTrek(trek);
+        setIsModalOpen(true);
+    };
+
+    return (
+        <>
+            <div className="min-h-screen bg-gray-50 py-20 px-6">
+
+                {/* Heading */}
+                <div className="text-center">
+
+                    <div className="flex flex-wrap gap-3 justify-center items-center">
+
+                        <h1 className="text-4xl md:text-5xl text-red-900 font-light tracking-wide">
+                            Upper Mustang
+                        </h1>
+
+                        <h1 className="text-4xl md:text-5xl font-serif text-gray-800">
+                            Treks
+                        </h1>
+
+                    </div>
+
+                    <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+                        Explore the hidden desert kingdom of Nepal filled with ancient caves, monasteries, and Tibetan culture.
+                    </p>
 
                 </div>
 
+                {/* Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-14">
 
-            </div>
+                    {treks.map((trek, index) => (
+                        <div
+                            key={index}
+                            className="group bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-gray-100"
+                        >
 
-            {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-14">
+                            {/* Image */}
+                            <div className="relative overflow-hidden">
 
-                {treks.map((trek, index) => (
-                    <div
-                        key={index}
-                        className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300"
-                    >
+                                <img
+                                    src={trek.image}
+                                    alt={trek.title}
+                                    className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
+                                />
 
-                        {/* Image */}
-                        <div className="relative overflow-hidden">
+                                {/* Price Badge */}
+                                <div className="absolute top-4 right-4 bg-red-900 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+                                    {trek.price}
+                                </div>
 
-                            <img
-                                src={trek.image}
-                                alt={trek.title}
-                                className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
-                            />
+                            </div>
 
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            {/* Content */}
+                            <div className="p-6">
 
-                                <button
-                                    onClick={() => openModal(trek)}
-                                    className="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition"
-                                >
-                                    View Details
-                                </button>
+                                <h1 className="text-2xl font-bold text-gray-800">
+                                    {trek.title}
+                                </h1>
+
+                                <p className="text-gray-500 mt-3 leading-relaxed text-sm">
+                                    {trek.description}
+                                </p>
+
+                                {/* Info Grid */}
+                                <div className="grid grid-cols-2 gap-4 mt-6 text-sm">
+
+                                    <div className="bg-gray-100 rounded-xl p-3">
+                                        <p className="text-gray-400">Duration</p>
+                                        <h2 className="font-semibold text-gray-800">{trek.duration}</h2>
+                                    </div>
+
+                                    <div className="bg-gray-100 rounded-xl p-3">
+                                        <p className="text-gray-400">Risk</p>
+                                        <h2 className="font-semibold text-gray-800">{trek.risk}</h2>
+                                    </div>
+
+                                    <div className="bg-gray-100 rounded-xl p-3">
+                                        <p className="text-gray-400">Accommodation</p>
+                                        <h2 className="font-semibold text-gray-800">{trek.accommodation}</h2>
+                                    </div>
+
+                                    <div className="bg-gray-100 rounded-xl p-3">
+                                        <p className="text-gray-400">Transport</p>
+                                        <h2 className="font-semibold text-gray-800">{trek.transportation}</h2>
+                                    </div>
+
+                                </div>
+
+                                {/* Review */}
+                                <div className="mt-6">
+                                    <p className="text-gray-400 text-sm">Rating</p>
+                                    <h2 className="font-bold text-yellow-500">
+                                        ⭐ {trek.review}
+                                    </h2>
+                                </div>
+
+                                {/* Experience */}
+                                <div className="mt-5 border-t pt-4">
+                                    <p className="text-gray-400 text-sm">Experience</p>
+                                    <p className="text-gray-700 mt-1 text-sm">
+                                        {trek.experience}
+                                    </p>
+                                </div>
 
                             </div>
                         </div>
+                    ))}
+                </div>
 
-                        {/* Content */}
-                        <div className="p-5">
+                {/* Modal */}
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    data={selectedTrek}
+                />
 
-                            <h1 className="text-2xl font-bold text-gray-800">
-                                {trek.title}
-                            </h1>
-
-                            <p className="text-gray-500 mt-3 leading-relaxed">
-                                {trek.description.slice(0, 90)}...
-                            </p>
-
-                        </div>
-                    </div>
-                ))}
             </div>
 
-            {/* Modal */}
-            <Modal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                data={selectedTrek}
-            />
-       
-        </div>
-        <Footer/>
+            <Footer />
         </>
-  )
+    )
 }
 
 export default UpperMustang

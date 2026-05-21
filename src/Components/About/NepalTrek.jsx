@@ -46,14 +46,14 @@ const NepalTrek = () => {
             1. Removed all rounding on desktop (lg:rounded-none) so it reaches the edge corners.
             2. Kept your base heights, but on desktop it spans your full layout height (lg:h-[700px]).
           */}
-          <div className="w-full lg:w-1/2 h-[300px] sm:h-[450px] lg:h-[700px] overflow-hidden rounded-3xl lg:rounded-none shadow-2xl lg:[clip-path:polygon(12%_0%,100%_0%,100%_100%,0%_100%)]">
+          <div className="w-full lg:w-1/2 h-[300px] sm:h-[450px] ml-auto mr-auto lg:h-[700px] overflow-hidden rounded-3xl lg:rounded-none shadow-2xl lg:[clip-path:polygon(12%_0%,100%_0%,100%_100%,0%_100%)]">
             <picture>
               <source
                 media="(min-width: 640px)"
                 srcSet="https://images.wallpaperscraft.com/image/single/mountain_peak_tourists_148482_3840x2160.jpg"
               />
               <img
-                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=600"
+                src="https://images.wallpaperscraft.com/image/single/mountain_peak_tourists_148482_3840x2160.jpg"
                 alt="Nepal Trek"
                 
                 className="w-full h-full object-cover"
@@ -65,7 +65,7 @@ const NepalTrek = () => {
       </div>
 
       <Footer />
-    </>
+    </> 
   );
 };
 
