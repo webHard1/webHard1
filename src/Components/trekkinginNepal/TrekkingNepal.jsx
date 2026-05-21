@@ -65,7 +65,7 @@ const TrekkingNepal = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className=" flex flex-col bg-gray-50">
 
       {/* Main Content */}
       <div className="pt-24 px-6 flex-1">
