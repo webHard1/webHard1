@@ -87,7 +87,7 @@ const Packages = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col">
       <div className="pt-24 px-8 flex-1">
 
         {/* Heading */}
