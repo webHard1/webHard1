@@ -7,37 +7,42 @@ const NavBar = () => {
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 bg-gray-100 w-full shadow-md px-8 py-4 z-50">
-      <div className="flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full bg-gray-100 shadow-md h-[60px] px-4 sm:px-6 md:px-8 z-50">
+
+      <div className="flex items-center justify-between h-full">
 
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <Link to='/'>
-            <h1 className="text-2xl font-bold text-gray-800 font-serif">
-              Nepal Trek
-            </h1>
-          </Link>
-        </div>
+        <Link
+          to="/"
+          className="flex items-center hover:opacity-80 transition duration-200"
+        >
+          <img
+            src="/logo1.png"
+            alt="Nepal Trek"
+            className="w-[180px] sm:w-[220px] md:w-[260px] h-auto object-contain"
+          />
+        </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 font-semibold text-gray-700">
+        <ul className="hidden md:flex items-center gap-10 font-semibold text-gray-700">
 
-          <Link to='/'>
-            <li className="hover:text-red-900 cursor-pointer font-transition duration-300">
+          <Link to="/">
+            <li className="hover:text-red-900 cursor-pointer transition duration-300">
               HOME
             </li>
           </Link>
 
-          {/* ABOUT Dropdown */}
+          {/* ABOUT */}
           <li
-            className="relative cursor-pointer transition duration-300"
+            className="relative cursor-pointer"
             onMouseEnter={() => setAboutOpen(true)}
             onMouseLeave={() => setAboutOpen(false)}
           >
-            <span className="hover:text-red-900 flex items-center gap-1">
+            <span className="flex items-center gap-1 hover:text-red-900 transition duration-300">
               ABOUT
+
               <svg
-                className="w-4 h-4 mt-0.5" 
+                className="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -52,22 +57,22 @@ const NavBar = () => {
             </span>
 
             {aboutOpen && (
-              <ul className="absolute top-full left-0 bg-white shadow-md border border-gray-200 w-48 z-50">
+              <ul className="absolute top-full left-0 mt-3 w-52 bg-white shadow-lg rounded-md overflow-hidden border border-gray-200 z-50">
 
-                <Link to='/nepalTrek'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                <Link to="/nepalTrek">
+                  <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
                     NEPAL TREK
                   </li>
                 </Link>
 
-                <Link to='/nepalTrekTeam'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                <Link to="/nepalTrekTeam">
+                  <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
                     NEPAL TREK TEAM
                   </li>
                 </Link>
 
-                <Link to='/services'>
-                  <li className="px-4 py-2 hover:bg-gray-100 hover:text-red-900 cursor-pointer text-sm font-semibold text-gray-700 transition duration-200">
+                <Link to="/services">
+                  <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
                     SERVICES
                   </li>
                 </Link>
@@ -76,19 +81,19 @@ const NavBar = () => {
             )}
           </li>
 
-          <Link to='/trekkingInNepal'>
+          <Link to="/trekkingInNepal">
             <li className="hover:text-red-900 cursor-pointer transition duration-300">
               TREKKING IN NEPAL
             </li>
           </Link>
 
-          <Link to='/photoGallery'>
+          <Link to="/photoGallery">
             <li className="hover:text-red-900 cursor-pointer transition duration-300">
               PHOTO GALLERY
             </li>
           </Link>
 
-          <Link to='/contact'>
+          <Link to="/contact">
             <li className="hover:text-red-900 cursor-pointer transition duration-300">
               CONTACT
             </li>
@@ -96,39 +101,59 @@ const NavBar = () => {
 
         </ul>
 
-        
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none"
+          className="md:hidden flex flex-col justify-between w-6 h-5"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
         >
-          <span className={`block w-full h-0.5 bg-gray-700 rounded transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`} />
-          <span className={`block w-full h-0.5 bg-gray-700 rounded transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-full h-0.5 bg-gray-700 rounded transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
-        </button>
 
+          <span
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? 'rotate-45 translate-y-2' : ''
+            }`}
+          />
+
+          <span
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? 'opacity-0' : ''
+            }`}
+          />
+
+          <span
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? '-rotate-45 -translate-y-2' : ''
+            }`}
+          />
+
+        </button>
       </div>
 
-    
-      <ul className={`md:hidden flex flex-col gap-0 text-lg font-semibold text-gray-700 overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 mt-4' : 'max-h-0'}`}>
+      {/* Mobile Menu */}
+      <ul
+        className={`md:hidden absolute left-0 top-[80px] w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-300 ${
+          isOpen ? 'max-h-[500px]' : 'max-h-0'
+        }`}
+      >
 
-        <Link to='/'>
-          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+        <Link to="/">
+          <li className="px-6 py-4 border-b border-gray-200 hover:text-red-900">
             HOME
           </li>
         </Link>
 
-      
-        <li className="cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+        {/* Mobile About */}
+        <li className="border-b border-gray-200">
 
           <div
-            className="flex items-center justify-between hover:text-red-900"
+            className="flex items-center justify-between px-6 py-4 hover:text-red-900 cursor-pointer"
             onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
           >
             <span>ABOUT</span>
 
             <svg
-              className={`w-4 h-4 transition-transform duration-300 ${mobileAboutOpen ? 'rotate-180' : ''}`}
+              className={`w-4 h-4 transition-transform duration-300 ${
+                mobileAboutOpen ? 'rotate-180' : ''
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -142,22 +167,26 @@ const NavBar = () => {
             </svg>
           </div>
 
-          <ul className={`overflow-hidden transition-all duration-300 ${mobileAboutOpen ? 'max-h-40 mt-2' : 'max-h-0'}`}>
+          <ul
+            className={`overflow-hidden transition-all duration-300 ${
+              mobileAboutOpen ? 'max-h-40' : 'max-h-0'
+            }`}
+          >
 
-            <Link to='/nepalTrek'>
-              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
+            <Link to="/nepalTrek">
+              <li className="px-10 py-3 text-sm border-t border-gray-100 hover:text-red-900">
                 NEPAL TREK
               </li>
             </Link>
 
-            <Link to='/nepalTrekTeam'>
-              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
+            <Link to="/nepalTrekTeam">
+              <li className="px-10 py-3 text-sm border-t border-gray-100 hover:text-red-900">
                 NEPAL TREK TEAM
               </li>
             </Link>
 
-            <Link to='/services'>
-              <li className="py-2 pl-4 text-sm hover:text-red-900 border-t border-gray-100">
+            <Link to="/services">
+              <li className="px-10 py-3 text-sm border-t border-gray-100 hover:text-red-900">
                 SERVICES
               </li>
             </Link>
@@ -165,20 +194,20 @@ const NavBar = () => {
           </ul>
         </li>
 
-        <Link to='/trekkingInNepal'>
-          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+        <Link to="/trekkingInNepal">
+          <li className="px-6 py-4 border-b border-gray-200 hover:text-red-900">
             TREKKING IN NEPAL
           </li>
         </Link>
 
-        <Link to='/photoGallery'>
-          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3 border-b border-gray-200">
+        <Link to="/photoGallery">
+          <li className="px-6 py-4 border-b border-gray-200 hover:text-red-900">
             PHOTO GALLERY
           </li>
         </Link>
 
-        <Link to='/contact'>
-          <li className="hover:text-red-900 cursor-pointer transition duration-300 py-3">
+        <Link to="/contact">
+          <li className="px-6 py-4 hover:text-red-900">
             CONTACT
           </li>
         </Link>
