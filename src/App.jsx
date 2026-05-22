@@ -20,11 +20,9 @@ import ScrollToTop from './Components/Scroller_top/ScrollToTop.jsx.jsx'
 function App() {
   return (
     <>
-      
-         
+    <title> Nepal Trek</title>
       <NavBar />
-      <ScrollToTop/>
-
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
@@ -39,10 +37,8 @@ function App() {
         <Route path='/manaslu' element={<Mansalu />} />
         <Route path='/upperMustang' element={<UpperMustang />} />
         <Route path='/kori' element={<Kori />} />
-
-        
       </Routes>
-      
+
     </>
   )
 }
