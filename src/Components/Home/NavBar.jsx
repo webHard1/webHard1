@@ -108,21 +108,18 @@ const NavBar = () => {
         >
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
-              isOpen ? 'rotate-45 translate-y-2' : ''
-            }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''
+              }`}
           />
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
-              isOpen ? 'opacity-0' : ''
-            }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? 'opacity-0' : ''
+              }`}
           />
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
-              isOpen ? '-rotate-45 -translate-y-2' : ''
-            }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''
+              }`}
           />
 
         </button>
@@ -130,9 +127,8 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`md:hidden absolute left-0 top-[80px] w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-[500px]' : 'max-h-0'
-        }`}
+        className={`md:hidden absolute left-0 top-[80px] w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[500px]' : 'max-h-0'
+          }`}
       >
 
         <Link to="/">
@@ -151,9 +147,8 @@ const NavBar = () => {
             <span>ABOUT</span>
 
             <svg
-              className={`w-4 h-4 transition-transform duration-300 ${
-                mobileAboutOpen ? 'rotate-180' : ''
-              }`}
+              className={`w-4 h-4 transition-transform duration-300 ${mobileAboutOpen ? 'rotate-180' : ''
+                }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -168,9 +163,8 @@ const NavBar = () => {
           </div>
 
           <ul
-            className={`overflow-hidden transition-all duration-300 ${
-              mobileAboutOpen ? 'max-h-40' : 'max-h-0'
-            }`}
+            className={`overflow-hidden transition-all duration-300 ${mobileAboutOpen ? 'max-h-40' : 'max-h-0'
+              }`}
           >
 
             <Link to="/nepalTrek">
