@@ -19,7 +19,7 @@ const NavBar = () => {
           <img
             src="/logo1.png"
             alt="Nepal Trek"
-            className="w-[180px] sm:w-[220px] md:w-[260px] h-auto object-contain"
+            className="w-[170px] sm:w-[210px] md:w-[240px] h-auto object-contain"
           />
         </Link>
 
@@ -32,13 +32,14 @@ const NavBar = () => {
             </li>
           </Link>
 
-          {/* ABOUT */}
+          {/* ABOUT DROPDOWN */}
           <li
             className="relative cursor-pointer"
             onMouseEnter={() => setAboutOpen(true)}
             onMouseLeave={() => setAboutOpen(false)}
           >
-            <span className="flex items-center gap-1 hover:text-red-900 transition duration-300">
+
+            <div className="flex items-center gap-1 hover:text-red-900 transition duration-300">
               ABOUT
 
               <svg
@@ -54,10 +55,10 @@ const NavBar = () => {
                   d="M19 9l-7 7-7-7"
                 />
               </svg>
-            </span>
+            </div>
 
             {aboutOpen && (
-              <ul className="absolute top-full left-0 mt-3 w-52 bg-white shadow-lg rounded-md overflow-hidden border border-gray-200 z-50">
+              <ul className="absolute top-full left-0 w-52 bg-white shadow-lg rounded-md overflow-hidden border border-gray-200 z-50">
 
                 <Link to="/nepalTrek">
                   <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
@@ -101,25 +102,28 @@ const NavBar = () => {
 
         </ul>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Hamburger */}
         <button
           className="md:hidden flex flex-col justify-between w-6 h-5"
           onClick={() => setIsOpen(!isOpen)}
         >
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? 'rotate-45 translate-y-2' : ''
+            }`}
           />
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? 'opacity-0' : ''
-              }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? 'opacity-0' : ''
+            }`}
           />
 
           <span
-            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
+            className={`block h-0.5 w-full bg-gray-700 rounded transition duration-300 ${
+              isOpen ? '-rotate-45 -translate-y-2' : ''
+            }`}
           />
 
         </button>
@@ -127,8 +131,9 @@ const NavBar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`md:hidden absolute left-0 top-[80px] w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[500px]' : 'max-h-0'
-          }`}
+        className={`md:hidden absolute left-0 top-[60px] w-full bg-gray-100 shadow-md overflow-hidden transition-all duration-300 ${
+          isOpen ? 'max-h-[500px]' : 'max-h-0'
+        }`}
       >
 
         <Link to="/">
@@ -147,8 +152,9 @@ const NavBar = () => {
             <span>ABOUT</span>
 
             <svg
-              className={`w-4 h-4 transition-transform duration-300 ${mobileAboutOpen ? 'rotate-180' : ''
-                }`}
+              className={`w-4 h-4 transition-transform duration-300 ${
+                mobileAboutOpen ? 'rotate-180' : ''
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -163,8 +169,9 @@ const NavBar = () => {
           </div>
 
           <ul
-            className={`overflow-hidden transition-all duration-300 ${mobileAboutOpen ? 'max-h-40' : 'max-h-0'
-              }`}
+            className={`overflow-hidden transition-all duration-300 ${
+              mobileAboutOpen ? 'max-h-40' : 'max-h-0'
+            }`}
           >
 
             <Link to="/nepalTrek">
