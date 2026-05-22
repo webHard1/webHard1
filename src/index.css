@@ -13,7 +13,7 @@
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
-  animation: typing 3s steps(50, end) forwards;
+  animation: typing 6s steps(100, end) forwards;
   margin: 0 auto;
   text-align: center;
 }

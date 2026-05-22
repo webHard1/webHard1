@@ -17,7 +17,7 @@ export const Greetingpage = () => {
 
       {/* Animated Text */}
       <div className="w-full flex justify-center">
-        <div className="animate-typing text-blue-900 text-sm sm:text-lg md:text-2xl text-center max-w-full break-words">
+        <div className="animate-typing text-red-900  text-sm sm:text-lg md:text-2xl text-center max-w-full break-words">
           Hello guyz! We are here to serve you attractive services.
         </div>
       </div>
