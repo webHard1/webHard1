@@ -56,7 +56,7 @@ const Contact = () => {
           </div>
 
           <p className="text-gray-600 mt-4 text-lg">
-            Plan your next adventure with Nepal Trek
+            Plan your next adventure with Miteri Treks
           </p>
 
         </div>

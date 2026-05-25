@@ -17,7 +17,7 @@ const NavBar = () => {
           className="flex items-center hover:opacity-80 transition duration-200"
         >
           <img
-            src="/logo1.png"
+            src="/logoorg.png"
             alt="Nepal Trek"
             className="w-[170px] sm:w-[210px] md:w-[240px] h-auto object-contain"
           />
@@ -62,13 +62,13 @@ const NavBar = () => {
 
                 <Link to="/nepalTrek">
                   <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
-                    NEPAL TREK
+                    MITERI TREK
                   </li>
                 </Link>
 
                 <Link to="/nepalTrekTeam">
                   <li className="px-4 py-3 text-sm hover:bg-gray-100 hover:text-red-900 transition duration-200">
-                    NEPAL TREK TEAM
+                    MITERI TREK TEAM
                   </li>
                 </Link>
 

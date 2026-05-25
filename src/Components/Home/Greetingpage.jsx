@@ -24,7 +24,7 @@ export const Greetingpage = () => {
 
       {/* First Paragraph */}
       <p className="max-w-3xl text-center text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
-        Nepal Trek welcomes you to an unforgettable adventure through the breathtaking
+        Miteri Treks welcomes you to an unforgettable adventure through the breathtaking
         landscapes of Nepal, where every trail leads to stunning mountain views and
         memorable experiences.
       </p>

@@ -20,7 +20,7 @@ import ScrollToTop from './Components/Scroller_top/ScrollToTop.jsx.jsx'
 function App() {
   return (
     <>
-    <title> Nepal Trek</title>
+    <title> Miteri Treks</title>
       <NavBar />
       <ScrollToTop />
       <Routes>

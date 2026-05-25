@@ -49,7 +49,7 @@ const Packages = () => {
     },
   ];
 
-  const totalSlides = packages.length - 3 + 1; // 0 to 3
+  const totalSlides = packages.length - 3 + 1; 
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
 
@@ -140,12 +140,15 @@ const Packages = () => {
                   </p>
 
                   <hr className="border-gray-100" />
+                   
+
+                   {/* Button for book now */}
 
                   <button
                     onClick={() => navigate(pkg.path)}
                     className="mt-1 w-full bg-red-900 hover:bg-red-800 active:bg-red-950 text-white text-sm font-semibold tracking-wide px-5 py-2.5 rounded-xl transition duration-300"
                   >
-                    Explore Trek →
+                    Book Now
                   </button>
                 </div>
               </div>

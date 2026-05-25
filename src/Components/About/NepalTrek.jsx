@@ -25,7 +25,7 @@ const NepalTrek = () => {
 
             {/* Paragraphs */}
             <p className="text-gray-700 text-base sm:text-lg leading-8 text-center lg:text-left">
-              Nepal Trek is dedicated to creating unforgettable trekking and
+              Miteri Treks is dedicated to creating unforgettable trekking and
               travel experiences across the beautiful landscapes of Nepal. From
               the towering Himalayan mountains to peaceful villages and ancient
               cultural sites, we help travelers discover the true beauty and
