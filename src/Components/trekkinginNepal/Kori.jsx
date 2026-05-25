@@ -143,12 +143,22 @@ const Kori = () => {
                                 </div>
 
                                 {/* Review */}
-                                <div className="mt-6">
-                                    <p className="text-gray-400 text-sm">Rating</p>
-                                    <h2 className="font-bold text-yellow-500">
-                                        ⭐ {trek.review}
-                                    </h2>
-                                </div>
+                                <div className="flex items-center justify-between mt-6">
+
+                  <div>
+                    <p className="text-gray-400 text-sm">User Review</p>
+                    <h2 className="font-bold text-yellow-500">
+                      ⭐ {trek.review}
+                    </h2>
+                  </div>
+                    <button
+                   
+                    className="bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-xl transition"
+                  >
+                  Book now
+                  </button>
+
+                </div>
 
                                 {/* Experience */}
                                 <div className="mt-5 border-t pt-4">

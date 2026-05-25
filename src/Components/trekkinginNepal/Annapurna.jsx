@@ -103,14 +103,14 @@ const Trekking = () => {
                 />
 
                 {/* Overlay */}
-                {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
                   <button
                     onClick={() => openModal(trek)}
                     className="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-lg hover:scale-105 transition"
                   >
-                    View Details
+                    
                   </button>
-                </div> */}
+                </div>
 
                 {/* Price Badge */}
                 <div className="absolute top-4 right-4 bg-red-900 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
@@ -168,12 +168,12 @@ const Trekking = () => {
                     </h2>
                   </div>
 
-                  {/* <button
-                    onClick={() => openModal(trek)}
+                 <button
+                   
                     className="bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-xl transition"
                   >
-                    Explore
-                  </button> */}
+                  Book now
+                  </button>
                 </div>
 
                 {/* Experience */}
