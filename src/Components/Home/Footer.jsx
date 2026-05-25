@@ -82,12 +82,12 @@ const Footer = () => {
                 </li>
               </Link>
 
-             <Link to ='/everest' >
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Everest Region
-                </a>
-              </li>
+              <Link to='/everest' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Everest Region
+                  </a>
+                </li>
               </Link>
 
               <li>
@@ -95,24 +95,26 @@ const Footer = () => {
                   Dolpa Region
                 </a>
               </li>
-
+               <Link to ='/upperMustang' >
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Mustang Region
                 </a>
               </li>
-
+              </Link>
+                <Link to ='/manaslu' >
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Manaslu Region
                 </a>
               </li>
-                   <Link to ='/langtang' >
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Langtang Place
-                </a>
-              </li>
+              </Link>
+              <Link to='/langtang' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Langtang Place
+                  </a>
+                </li>
               </Link>
             </ul>
           </div>
