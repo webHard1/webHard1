@@ -10,10 +10,10 @@
 
 .animate-typing {
   width: 0;
-  overflow: hidden;
+  overflow: hidden; 
   white-space: nowrap;
   display: inline-block;
-  animation: typing 6s steps(100, end) forwards;
+  animation: typing 6s steps(150, end) forwards;
   margin: 0 auto;
   text-align: center;
 }
