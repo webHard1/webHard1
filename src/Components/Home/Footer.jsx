@@ -33,6 +33,7 @@ const Footer = () => {
 
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
+             
                 <a href="#" className="hover:text-orange-300">
                   About Miteri
                 </a>
