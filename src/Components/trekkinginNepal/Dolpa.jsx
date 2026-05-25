@@ -2,47 +2,66 @@ import React, { useState } from 'react'
 import Modal from './Modal';
 import Footer from '../Home/Footer';
 
-const Kori = () => {
+const Dolpa = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedTrek, setSelectedTrek] = useState(null);
 
-    const treks = [
-        {
-            title: "Kapuche Lake Trek",
-            image:
-                "https://myeveresttrip.com/wp-content/uploads/2024/11/Kapuche-Glacier-Lake.webp",
+  const treks = [
+  {
+    title: "Upper Dolpo Trek",
+    image:
+      "https://adventuregreathimalaya.com/wp-content/uploads/upper-dolpo-trek-1.jpg",
 
-            description:
-                "A short trek to Nepal’s lowest glacial lake from Sikles village through forests, waterfalls, and mountain trails.",
+    description:
+      "A remote Himalayan adventure through ancient Tibetan villages, high passes, monasteries, and the mystical landscapes of Dolpo.",
 
-            price: "RS 25,000",
-            duration: "3-5 Days",
-            risk: "Easy to Moderate",
-            accommodation: "Tea Houses",
-            transportation: "Bus / Jeep",
-            review: "4.7/5",
-            experience: "Peaceful trek with unique glacier lake scenery.",
-        },
+    price: "RS 1,80,000",
+    duration: "18-25 Days",
+    risk: "Challenging",
+    accommodation: "Tea Houses / Camping",
+    transportation: "Flight / Jeep",
+    review: "4.9/5",
+    experience:
+      "A once-in-a-lifetime journey into Nepal’s hidden Himalayan wilderness.",
+  },
 
-        {
-            title: "Kori Trek",
-            image:
-                "https://mountfacenepal.com/uploads/package/gallery/kori-danda.webp",
+  {
+    title: "Shey Phoksundo Lake Trek",
+    image:
+      "https://www.placesnepal.com/storage/trip-galleries/35/large_10ed49f64ee4c8eab489dd0ce9db1d5a.webp",
 
-            description:
-                "A hidden trekking gem above Sikles offering rhododendron forests, alpine meadows, and stunning Annapurna views.",
+    description:
+      "Discover the breathtaking turquoise waters of Shey Phoksundo Lake surrounded by dramatic cliffs and snow-capped mountains.",
 
-            price: "RS 30,000",
-            duration: "4-6 Days",
-            risk: "Moderate",
-            accommodation: "Tea Houses / Camping",
-            transportation: "Bus / Jeep",
-            review: "4.8/5",
-            experience: "Perfect for solitude and panoramic mountain views.",
-        },
-    ];
+    price: "RS 95,000",
+    duration: "8-12 Days",
+    risk: "Moderate",
+    accommodation: "Tea Houses",
+    transportation: "Flight / Jeep",
+    review: "4.8/5",
+    experience:
+      "Peaceful trails, stunning alpine scenery, and rich Tibetan culture.",
+  },
 
+  {
+    title: "Shey Gompa Trek",
+    image:
+      "https://www.tmgadventure.com/wp-content/uploads/2019/12/shey-gompa-dolpa-scaled.jpg",
+
+    description:
+      "A spiritual trekking route leading to the ancient Shey Gompa monastery through isolated Himalayan valleys.",
+
+    price: "RS 1,40,000",
+    duration: "14-18 Days",
+    risk: "Hard",
+    accommodation: "Camping / Tea Houses",
+    transportation: "Flight / Jeep",
+    review: "4.8/5",
+    experience:
+      "Perfect for adventure seekers wanting culture, spirituality, and remote mountain beauty.",
+  },
+];
     const openModal = (trek) => {
         setSelectedTrek(trek);
         setIsModalOpen(true);
@@ -58,7 +77,7 @@ const Kori = () => {
                     <div className="flex flex-wrap gap-3 justify-center items-center">
 
                         <h1 className="text-4xl md:text-5xl text-red-900 font-light tracking-wide">
-                            Kori
+                            Dolpa
                         </h1>
 
                         <h1 className="text-4xl md:text-5xl font-serif text-gray-800">
@@ -66,10 +85,10 @@ const Kori = () => {
                         </h1>
 
                     </div>
-
-                    <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-                        Explore hidden trails, peaceful villages, and breathtaking Himalayan viewpoints near Pokhara.
-                    </p>
+<p className="text-gray-500 mt-4 max-w-2xl mx-auto">
+  Explore the remote beauty of Dolpa with hidden valleys,
+  ancient Tibetan culture, crystal lakes, and breathtaking Himalayan landscapes.
+</p>
 
                 </div>
 
@@ -187,4 +206,4 @@ const Kori = () => {
     )
 }
 
-export default Kori
+export default Dolpa

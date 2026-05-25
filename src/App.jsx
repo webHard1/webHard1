@@ -12,7 +12,7 @@ import Everest from './Components/trekkinginNepal/Everest'
 import Langtang from './Components/trekkinginNepal/Langtang'
 import Mansalu from './Components/trekkinginNepal/Mansalu'
 import UpperMustang from './Components/trekkinginNepal/UpperMustang'
-import Kori from './Components/trekkinginNepal/Kori'
+import Kori from './Components/trekkinginNepal/Dolpa.jsx'
 import ScrollToTop from './Components/Scroller_top/ScrollToTop.jsx.jsx'
 
 
