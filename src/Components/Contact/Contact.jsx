@@ -91,7 +91,7 @@ const Contact = () => {
               name="user_name"
               placeholder="Your Name"
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-red-900"
             />
 
             <input
@@ -100,7 +100,7 @@ const Contact = () => {
               placeholder="Your Email"
               required
               autoComplete="off"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-red-900"
             />
 
             <textarea
@@ -108,12 +108,12 @@ const Contact = () => {
               rows="5"
               placeholder="Your Message"
               required
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-red-900"
             ></textarea>
 
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition duration-300"
+              className="bg-red-900 hover:cursor-pointer text-white px-6 py-3 rounded-lg transition duration-300"
             >
               Send Message
             </button>
