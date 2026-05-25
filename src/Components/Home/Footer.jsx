@@ -146,7 +146,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full  border-t h-10 flex items-center justify-center text-gray-300 font-bold text-center px-4">
-        © {new Date().getFullYear()} Nepal Treks & Expedition.
+        © {new Date().getFullYear()} Miteri Treks & Expedition.
       </div>
 
     </footer>
