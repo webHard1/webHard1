@@ -19,7 +19,7 @@ const Footer = () => {
 
           {/* Logo */}
           <div>
-            <h1 className="text-2xl font-bold">NEPAL TREK</h1>
+            <h1 className="text-2xl font-bold">MITERI TREK</h1>
 
             <p className=" leading-7 text-sm mt-2">
               Visit Our Website for Efficient Work.
