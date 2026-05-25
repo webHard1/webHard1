@@ -33,36 +33,36 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>
-             
-                <a href="#" className="hover:text-orange-300">
-                  About Miteri
-                </a>
-              </li>
+              <Link to='/nepalTrek' >
+                <li>
 
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Miteri Trek team
-                </a>
-              </li>
+                  <a href="#" className="hover:text-orange-300">
+                    About Miteri
+                  </a>
+                </li>
+              </Link>
+              <Link to='/nepalTrekTeam' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Miteri Trek team
+                  </a>
+                </li>
+              </Link>
 
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Nepal Details
-                </a>
-              </li>
-
+            <Link to ='/photoGallery' >
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Pictures
                 </a>
               </li>
-
+              </Link>
+                <Link to ='/contact' >
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Contact Us
                 </a>
               </li>
+              </Link>
             </ul>
           </div>
 
@@ -96,19 +96,19 @@ const Footer = () => {
                   Dolpa Region
                 </a>
               </li>
-               <Link to ='/upperMustang' >
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Mustang Region
-                </a>
-              </li>
+              <Link to='/upperMustang' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Mustang Region
+                  </a>
+                </li>
               </Link>
-                <Link to ='/manaslu' >
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Manaslu Region
-                </a>
-              </li>
+              <Link to='/manaslu' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Manaslu Region
+                  </a>
+                </li>
               </Link>
               <Link to='/langtang' >
                 <li>
