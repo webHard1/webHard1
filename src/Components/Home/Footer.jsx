@@ -72,10 +72,13 @@ const Footer = () => {
 
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
+                
                 <a href="#" className="hover:text-orange-300">
                   Annapurna Place
                 </a>
+               
               </li>
+              
 
               <li>
                 <a href="#" className="hover:text-orange-300">
@@ -117,20 +120,22 @@ const Footer = () => {
 
             <div className="text-gray-300 text-sm space-y-3 leading-6">
               <p className="hover:text-orange-300">
-                Zero, Barsta - 15, Pokhara, Nepal
+                Nayagaun, Lakeside - 15
               </p>
 
               <p className="hover:text-orange-300">
-                intertrek@gmail.com
+                mntravelandtrek@hotmail.com
+                info@miteritreks.com
               </p>
 
               <p className="hover:text-orange-300">
-                +977 980000010 / 9811188111
+                +977(9846039244/9846641036)
+                061-434892
               </p>
 
-              <p className="hover:text-orange-300">
+              {/* <p className="hover:text-orange-300">
                 012-121212
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
