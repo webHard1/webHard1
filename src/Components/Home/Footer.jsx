@@ -151,7 +151,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full  border-t h-10 flex items-center justify-center text-gray-300 font-bold text-center px-4">
-        © {new Date().getFullYear()} Miteri Treks & Expedition.
+        © {new Date().getFullYear()} 2026 Miteri Treks Pvt. Ltd. All rights reserved.
       </div>
 
     </footer>
