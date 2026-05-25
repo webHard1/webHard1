@@ -53,7 +53,7 @@ const Footer = () => {
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Pictures
-                </a>
+                </a> 
               </li>
               </Link>
                 <Link to ='/contact' >
