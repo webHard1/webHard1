@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -72,44 +73,50 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>
-                
-                <a href="#" className="hover:text-orange-300">
-                  Annapurna Place
-                </a>
-               
-              </li>
-              
+              <Link to='/Annapurna' >
+                <li>
+
+                  <a href="#" className="hover:text-orange-300">
+                    Annapurna Region
+                  </a>
+
+                </li>
+              </Link>
+
+              <Link to='/everest' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Everest Region
+                  </a>
+                </li>
+              </Link>
 
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Australia Place
+                  Dolpa Region
                 </a>
               </li>
-
+               <Link to ='/upperMustang' >
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Dolpa Place
+                  Mustang Region
                 </a>
               </li>
-
+              </Link>
+                <Link to ='/manaslu' >
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Mustang Place
+                  Manaslu Region
                 </a>
               </li>
-
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Manaslu Place
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Langtang Place
-                </a>
-              </li>
+              </Link>
+              <Link to='/langtang' >
+                <li>
+                  <a href="#" className="hover:text-orange-300">
+                    Langtang Place
+                  </a>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -152,7 +159,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full  border-t h-10 flex items-center justify-center text-gray-300 font-bold text-center px-4">
-        © {new Date().getFullYear()} Miteri Treks & Expedition.
+        © {new Date().getFullYear()} 2026 Miteri Treks Pvt. Ltd. All rights reserved.
       </div>
 
     </footer>
