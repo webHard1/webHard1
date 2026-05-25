@@ -34,13 +34,13 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  About Trek
+                  About Miteri
                 </a>
               </li>
 
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Intern-Trek Team
+                  Miteri Trek team
                 </a>
               </li>
 
@@ -121,7 +121,7 @@ const Footer = () => {
               </p>
 
               <p className="hover:text-orange-300">
-                intertrek@gmail.com
+                miteritreks@gmail.com
               </p>
 
               <p className="hover:text-orange-300">
@@ -146,7 +146,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full  border-t h-10 flex items-center justify-center text-gray-300 font-bold text-center px-4">
-        © {new Date().getFullYear()} Nepal Treks & Expedition.
+        © {new Date().getFullYear()} Miteri Treks & Expedition.
       </div>
 
     </footer>

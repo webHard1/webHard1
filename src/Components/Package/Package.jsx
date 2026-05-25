@@ -108,7 +108,7 @@ const Packages = () => {
         >
           {/* Cards Track */}
           <div
-            className="flex transition-transform duration-500 gap-7"
+            className="flex transition-transform duration-1000 gap-7"
             style={{ transform: `translateX(-${currentIndex * 33.5}%)` }}
           >
             {packages.map((pkg) => (
@@ -163,7 +163,7 @@ const Packages = () => {
           {/* Right Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-[45%] -translate-y-1/2 bg-white border border-gray-200 shadow-md hover:bg-red-900 hover:text-white hover:border-red-900 w-10 h-10 rounded-full text-xl flex items-center justify-center transition-all duration-300"
+            className="absolute right-0 top-[45%] -translocate-y-1/2 bg-white border border-gray-200 shadow-md hover:bg-red-900 hover:text-white hover:border-red-900 w-10 h-10 rounded-full text-xl flex items-center justify-center transition-all duration-300"
           >
             ❯
           </button>

@@ -186,6 +186,12 @@ const Everest = () => {
                       ⭐ {trek.review}
                     </h2>
                   </div>
+                    <button
+                   
+                    className="bg-red-900 hover:bg-red-800 text-white px-5 py-2 rounded-xl transition"
+                  >
+                  Book now
+                  </button>
 
                 </div>
 
