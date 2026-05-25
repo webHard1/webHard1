@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -71,44 +72,48 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-2 text-gray-300 text-sm">
+              <Link to='/Annapurna' >
+                <li>
+
+                  <a href="#" className="hover:text-orange-300">
+                    Annapurna Region
+                  </a>
+
+                </li>
+              </Link>
+
+             <Link to ='/everest' >
               <li>
-                
                 <a href="#" className="hover:text-orange-300">
-                  Annapurna Place
+                  Everest Region
                 </a>
-               
               </li>
-              
+              </Link>
 
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Australia Place
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Dolpa Place
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:text-orange-300">
-                  Mustang Place
+                  Dolpa Region
                 </a>
               </li>
 
               <li>
                 <a href="#" className="hover:text-orange-300">
-                  Manaslu Place
+                  Mustang Region
                 </a>
               </li>
 
+              <li>
+                <a href="#" className="hover:text-orange-300">
+                  Manaslu Region
+                </a>
+              </li>
+                   <Link to ='/langtang' >
               <li>
                 <a href="#" className="hover:text-orange-300">
                   Langtang Place
                 </a>
               </li>
+              </Link>
             </ul>
           </div>
 
