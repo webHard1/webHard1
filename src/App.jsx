@@ -14,6 +14,9 @@ import Mansalu from './Components/trekkinginNepal/Mansalu'
 import UpperMustang from './Components/trekkinginNepal/UpperMustang'
 import Kori from './Components/trekkinginNepal/Dolpa.jsx'
 import ScrollToTop from './Components/Scroller_top/ScrollToTop.jsx.jsx'
+import VisaInformation from './Information/VisaInformation.jsx'
+import TrekkingPermit from './Information/TrekkingPermit.jsx'
+import ConservativeArea from './Information/ConservativeArea.jsx'
 
 
 
@@ -37,6 +40,9 @@ function App() {
         <Route path='/manaslu' element={<Mansalu />} />
         <Route path='/upperMustang' element={<UpperMustang />} />
         <Route path='/kori' element={<Kori />} />
+        <Route path='/visaInformation' element={<VisaInformation />} />
+        <Route path='/trekkingPermit' element={<TrekkingPermit />} />
+        <Route path='/conservativeArea' element={<ConservativeArea />} />
       </Routes>
 
     </>
