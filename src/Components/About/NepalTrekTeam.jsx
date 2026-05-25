@@ -4,51 +4,67 @@ import Footer from "../Home/Footer";
 const NepalTrekTeam = () => {
   const team = [
     {
-      img: "https://nht-api.nepalhikingteam.com/media/attachments/media-23e431fc-1760247602.jpg",
-      name: "Ram Bahadur Lama",
+      img: "https://miteritreks.com/uploads/members/04753b271bd2ad58777f427dc0ab3c08.jpg",
+      name: "Andrea Jozef Heuten",
+      role: "Advisor",
+    },
+
+    {
+      img: "https://miteritreks.com/uploads/members/ebc42ce5faa4cc460d7b24070b52628f.jpg",
+      name: " Jörn Materne International Guest Relation  ",
+      role: "Co-Advisor",
+    },
+
+    {
+      img: "https://miteritreks.com/uploads/members/8c333f0e0428ba3be0813de39b67ae09.jpg",
+      name: "Kisham Kumari Gurung",
+      role: "Managing Director",
+    },
+
+    {
+      img: "https://miteritreks.com/uploads/members/335203dfe5379c71ef30ba7b50535677.jpg",
+      name: "Anand Jung Gurung",
+      role: "Executive Director",
+    },
+
+    {
+      img: "https://miteritreks.com/uploads/members/2f2d65b96f24be32b6f94c5a87ff58a1.JPG",
+      name: "Man Bahadur Gurung (Man Singh)",
+      role: "Partner",
+    },
+
+    {
+      img: "https://miteritreks.com/uploads/members/79f660ba66eb53a6f6d3201662e93936.jpg",
+      name: "Nanda Prasad Gurung (Maila)",
       role: "Guide",
     },
 
     {
-      img: "https://www.switchbacktravel.com/sites/default/files/images/articles/Cameras%20for%20Hiking%20and%20Backpacking%20Photo-1.jpg",
-      name: "Joes Albert",
-      role: "Photographer",
+      img: "https://miteritreks.com/uploads/members/b80c0948858683af35546a320ab125b9.JPG",
+      name: "Lal Bahadur Tamang",
+      role: "Guide",
     },
 
     {
-      img: "https://m.thepeninsulaqatar.com/get/maximage/20210727_1627406156-284769.JPG?1635250003",
-      name: "David",
-      role: "Mountaineer",
+      img: "https://miteritreks.com/uploads/members/7ab43af3dea31f73bab83955694e0d8a.jpeg",
+      name: "Sahadev Mahato",
+      role: "Guide",
+    },
+     {
+      img: "",
+      name: "Anil Gurung",
+      role: "Guide",
+    },
+    {
+      img: "",
+      name: "Doma Sherpa",
+      role: "Guide",
     },
 
-    {
-      img: "https://www.himalayanglacier.com/wp-content/uploads/2021/05/dancing-at-mera-peak-climbing-1024x671.jpg",
-      name: "Raju Lama",
-      role: "Planner",
-    },
-
-    {
-      img: "https://media.nepaltrekkingplanner.com/uploads/package/gallery/new-project---2023-05-02t134027.736-(1).webp",
-      name: "Pakash Tamang",
-      role: "Planner",
-    },
-
-    {
-      img: "https://www.thestatesman.com/wp-content/uploads/2019/05/O2-9-1024x683.jpg",
-      name: "Tenjing Lama",
-      role: "Coordinator",
-    },
-
-    {
-      img: "https://pbs.twimg.com/media/EsI0i_gVQAAfR7q.jpg",
-      name: "Raju Tamang",
-      role: "Trek Leader",
-    },
-
-    {
-      img: "https://asiantreks.com/uploads/socialmedia/mera-peak-summit.png",
-      name: "Tim David",
-      role: "Travel Expert",
+     {
+      img: "",
+      name: "Rabindra Gurung",
+      role: "Guide",
     },
   ];
 
