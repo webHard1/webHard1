@@ -49,7 +49,7 @@ const Packages = () => {
     },
   ];
 
-  const totalSlides = packages.length - 3 + 1; // 0 to 3
+  const totalSlides = packages.length - 3 + 1; 
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
 
