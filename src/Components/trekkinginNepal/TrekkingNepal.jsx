@@ -53,12 +53,12 @@ const TrekkingNepal = () => {
     },
 
     {
-      title: "Kori Trek",
-      path: "/kori",
+      title: "Dolpa Trek",
+      path: "/Dolpa",
       description:
-        "Enjoy a short and peaceful trekking experience with amazing sunrise views and natural beauty.",
+        "Enjoy the peaceful trekking experience with amazing sunrise views and natural beauty and geography",
       image:
-        "https://www.advadventures.com/admin/postimages/dafa18c556ca5acde3479c9111c15c4b.jpg",
+        "https://d1kz4z644261g1.cloudfront.net/locations/featured_images/000/000/319/large/way-to-Chhoi_La.jpg?1535401199",
     },
   ];
 

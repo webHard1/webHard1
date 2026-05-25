@@ -12,7 +12,7 @@ import Everest from './Components/trekkinginNepal/Everest'
 import Langtang from './Components/trekkinginNepal/Langtang'
 import Mansalu from './Components/trekkinginNepal/Mansalu'
 import UpperMustang from './Components/trekkinginNepal/UpperMustang'
-import Kori from './Components/trekkinginNepal/Dolpa.jsx'
+import Dolpa from './Components/trekkinginNepal/Dolpa.jsx'
 import ScrollToTop from './Components/Scroller_top/ScrollToTop.jsx.jsx'
 
 
@@ -36,7 +36,7 @@ function App() {
         <Route path='/langtang' element={<Langtang />} />
         <Route path='/manaslu' element={<Mansalu />} />
         <Route path='/upperMustang' element={<UpperMustang />} />
-        <Route path='/kori' element={<Kori />} />
+        <Route path='/Dolpa' element={<Dolpa />} />
       </Routes>
 
     </>
