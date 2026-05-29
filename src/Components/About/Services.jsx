@@ -116,7 +116,7 @@ const photos = [
               className="bg-white rounded-lg max-w-2xl w-full overflow-hidden relative"
               onClick={(e) => e.stopPropagation()}
             >
-
+     
               <img
                 src={selectedPhoto.image}
                 alt={selectedPhoto.name}

@@ -30,7 +30,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/nepalTrek' element={<NepalTrek />} />
-        <Route path='/trekkingInNepal' element={<TrekkingNepal />} />
+        <Route path='/trekkingInNepal' element={<TrekkingNepal  />} />
         <Route path='/services' element={<Services />} />
         <Route path='/photoGallery' element={<PhotoGallery />} />
         <Route path='/nepalTrekTeam' element={<NepalTrekTeam />} />
@@ -46,7 +46,7 @@ function App() {
       </Routes>
 
     </>
-  )
+  ) 
 }
 
 export default App

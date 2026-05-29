@@ -11,7 +11,7 @@ const Home = () => {
       <Greetingpage />
       <Packages/>
       <Footer />
-    </div>
+      </div>
   )
 }
 
